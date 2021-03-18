@@ -42,7 +42,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "postversion": "git pubsh --follow-tags",
+    "postversion": "git push --follow-tags",
     "prepublishOnly": "npm run build"
   }
 }
